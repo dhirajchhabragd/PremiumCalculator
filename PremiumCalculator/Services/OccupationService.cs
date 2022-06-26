@@ -35,7 +35,7 @@ namespace PremiumCalculator.Services
             new Occupation()
             {
                 Id=5,
-                Name="Mechanin",
+                Name="Mechanic",
                 RatingId=4
             },
             new Occupation()
