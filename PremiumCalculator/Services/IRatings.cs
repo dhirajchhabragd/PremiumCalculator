@@ -1,4 +1,4 @@
-﻿using PremiumCalculator.Models;
+using PremiumCalculator.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,5 @@ namespace PremiumCalculator.Services
     public interface IRatingService
     {
         List<Rating> GetRatings();
-
-        Rating GetRating(int id);
     }
 }

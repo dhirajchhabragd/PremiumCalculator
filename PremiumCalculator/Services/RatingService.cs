@@ -1,4 +1,4 @@
-﻿using PremiumCalculator.Models;
+using PremiumCalculator.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,11 +35,6 @@ namespace PremiumCalculator.Services
                 Factor=1.75
             }
         };
-
-        public Rating GetRating(int id)
-        {
-            return ratings.FirstOrDefault(m => m.Id == id);
-        }
 
         public List<Rating> GetRatings()
         {

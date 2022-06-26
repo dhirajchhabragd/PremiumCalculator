@@ -1,6 +1,5 @@
-﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
-using PremiumCalculator.Models.api;
 using PremiumCalculator.Services;
 
 namespace PremiumCalculator.Controllers
@@ -21,13 +20,6 @@ namespace PremiumCalculator.Controllers
         public IActionResult GetOccupations()
         {
             return Ok(_occupationService.GetOccupations());
-        }
-
-        [HttpGet]
-        [Route("api/[controller]/calculatePremium")]
-        public IActionResult CalculatePremium(PremiumCalculatorRequestInfo premiumCalculatorRequestInfo)
-        {
-            return Ok(_occupationService.CalculatePremium(premiumCalculatorRequestInfo));
         }
     }
 }
