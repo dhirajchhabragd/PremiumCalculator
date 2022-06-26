@@ -1,0 +1,15 @@
+﻿using PremiumCalculator.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace PremiumCalculator.Services
+{
+    public interface IRatingService
+    {
+        List<Rating> GetRatings();
+
+        Rating GetRating(int id);
+    }
+}
